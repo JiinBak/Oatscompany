@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+#header {
+	width:90%;
+	height: 100px;
+}
+
+#map {
+	display: inline-block;
+	float:left;
+	width:70%;
+	height:600px;
+	backgrount:red;
+	margin: 10px;
+	}
+	
+#menu {
+	disploay:inline-block;
+	float:right;
+	margin:auto;
+	width:20%;
+	height:600px;
+}

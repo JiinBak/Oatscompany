@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.oatscompany.model.mapper.IDataDAO">
+
+<resultMap id="map" type="com.oatscompany.model.DataVO">
+	<result property="dataidx" column="DATAIDX" />
+	<result property="sido" column="SIDO" />
+	<result property="sigungu" column="SIGUNGU" />
+	<result property="dongmyun" column="DONGMYUN" />
+	<result property="regionid" column="REGIONID" />
+	<result property="x_coordinate" column="X_COORDINATE" />
+	<result property="y_coordinate" column="Y_COORDIANTE" />
+	<result property="today" column="TODAY" />
+	<result property="selecteddate" column="SELECTEDDATE" />
+</resultMap>
+
+	<insert id="insert" parameterType="com.oatscompany.model.DataVO">
+		   INSERT INTO OATSDATA(DATAIDX, SIDO, SIGUNGU, DONGMYUN, REGIONID, X-COORDINATE, Y_COORDINATE, TODAY, SELECTEDDATE)
+		   VALUES (#{dataidx},#{sido},#{sigungu},#{dongmyun},#{regionid},#{x_coordinate},#{y_coordinate}, NOW(),#{selecteddate}) 
+	</insert>
+	
+	
+
+</mapper>
