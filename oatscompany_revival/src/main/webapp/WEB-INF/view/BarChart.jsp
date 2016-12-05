@@ -6,7 +6,7 @@
 <title>박지인</title>
 </head>
 <body>
-<script>
+	<script>
 		var svgWidth = 1200;
 		// var svgHeight = 300;
 		// Legend를 넣기 위해 높이 늘림
@@ -77,7 +77,7 @@
 		/* 정해진 css 값의 색을 주기 */
 		//.attr("class", "bar")
 		.attr("width", barWidth).attr("x", function(d, i) {
-			return i * (chartWidth / dataSet.length)
+			return i * (chartWidth / dataSet.length) + 50
 		}).attr("y", function(d) {
 			return chartHeight
 		}).attr("height", function(d, i) {
@@ -101,11 +101,11 @@
 		})
 		/*막대에 수치표시*/
 		item.enter().append("text").attr("x", function(d, i) {
-			return i * (chartWidth / dataSet.length);
+			return i * (chartWidth / dataSet.length) + 50;
 		}).attr("y", function(d) {
-			return y(d.cpu_user) - 3;
+			return y(d.number) - 3;
 		}).style("opacity", 0).text(function(d, i) {
-			return d.cpu_user;
+			return d.number;
 		}).transition()
 		/*.delay(500)
 		 .duration(800)*/
@@ -135,7 +135,7 @@
 				.attr("y", function(d, i) {
 					return i * 15
 				}).text(function(d, i) {
-					return d.date;
+					return d.produce;
 				}).style("fill", "#1c1d1f").attr("transform",
 						"translate(" + 15 + "," + 10 + ")")
 	</script>
