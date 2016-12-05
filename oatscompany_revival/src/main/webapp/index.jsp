@@ -23,7 +23,7 @@
 </head>
 <body>
 	<header id="header">Oats Company!</header>
-	<p>소개글이라도 써볼까</p>
+	<p>소개글이라도 써볼-까</p>
 	<section>
 		<article>
 			<div id="map">
