@@ -22,8 +22,17 @@
 
 </head>
 <body>
-	<header id="header">Oats Company!</header>
-	<p>소개글이라도 써볼-까</p>
+	<header id="header">
+    <h3>기후 데이터와 농작물 주산지 데이터 분석을 통한 적합 농작물 제시</h3>
+    </header>
+    <div>
+        <div><P>Introducing Members</P></div>
+        <div><a class="memebers" id="uichan" href="<c:url value='/uichan' />">강의찬</a></div>
+        <div><a class="memebers" id="seongho" href="<c:url value='/uichan' />">노성호</a></div>
+        <div><a class="memebers" id="jiin" href="<c:url value='/uichan' />">박지인</a></div>
+    </div>
+    
+    <p>안녕하세요! Oats Company입니다. 현재 AWS EMR(spark)를 사용할 수 없습니다. 'What To Grow 버튼을 누르시면 분석된 데이터의 시각화 자료를 보실 수 있습니다.</p>
 	<section>
 		<article>
 			<div id="map">

@@ -81,4 +81,34 @@ public class DataController {
 		
 		return "result";
 	}
+	
+	@RequestMapping("/uichan")
+	public String showUichan() {
+		return "uichan";
+	}
+	
+	@RequestMapping("/seongho")
+	public String showSeongho() {
+		return "seongho";
+	}
+	
+	@RequestMapping("/jiin")
+	public String showJiin() {
+		return "jiin";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
