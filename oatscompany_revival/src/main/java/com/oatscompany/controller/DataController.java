@@ -97,6 +97,11 @@ public class DataController {
 		return "jiin";
 	}
 	
+	@RequestMapping("/BarChart")
+	public String showBarChart() {
+		return "BarChart";
+	}
+	
 	
 	
 	

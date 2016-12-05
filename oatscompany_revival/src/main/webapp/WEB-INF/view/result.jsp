@@ -110,7 +110,7 @@ body, body *{
             }
             dataSet = csv;
             console.log(dataSet[0])
-            $("#content").load(target + ".html");
+            $("#content").load(target);
         })
     }
     /* debug */
